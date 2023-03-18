@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>repoFinder</title>
+</head>
+<body class="root">
+    <main>
+        <section class="searchForm">
+            <div class="searchForm__container">
+                <form class="searchForm__form" name="search">
+                    <label class="searchForm__field">
+                        <input 
+                            name="name"
+                            id="repo"
+                            type="text"
+                            class="searchForm__input"
+                            placeholder="введите ключевое слово"
+                            
+                            maxlength="30"
+                            autocomplete="off"
+                        />
+                    </label>
+                    <button 
+                        type="submit"
+                        aria-label="search"
+                        class="searchForm__submit searchForm__button-search"
+                    ></button>
+                </form>
+            </div>
+        </section>
+
+
+
+
+        <section class="results">
+
+            <template id="card-template">
+                <div class="card">
+                    <a class="card__name" href="" target="blank"></a>
+                    <p class="card__field field-one"></p>
+                    <p class="card__field field-two"></p>
+                </div>
+            </template>
+        </section>
+    </main>
+</body>
+</html>
+
